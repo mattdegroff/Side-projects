@@ -6,7 +6,7 @@ class Arge
 
 int Arge::nbYear(int p0, double percent, int aug, int p){
     int year = 0; //num of years to return
-    while (p0 <= p) { //checks p0 is still less than p
+    while (p0 < p) { //checks p0 is still less than p
       p0 = p0 + (p0 * (percent/100)) + aug; //increases population according to the model
       year++; //adds a year for the year that just passed
     }

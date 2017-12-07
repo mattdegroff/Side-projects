@@ -33,6 +33,7 @@ public class exponent {
 		int c = equals(a, b);
 		int d = equalsR(a, b);
 		System.out.println(a + "^" + b + " = " + c);
-		System.out.print(a + "^" + b + " = " + d + " (recursive)";
+		System.out.print(a + "^" + b + " = " + d + " (recursive)");
+		s.close();
 	}
 }

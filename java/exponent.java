@@ -15,6 +15,15 @@ public class exponent {
 		}
 	}
 	
+	//non-recursive
+	public static int equals(int a, int b) {
+		int a1 = a;
+		for(int i = 0; i < b; i++){
+			a *= a1;			
+		}
+		return a;
+	}	
+	
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		System.out.print("Enter the base of the exponent: ");
@@ -22,6 +31,8 @@ public class exponent {
 		System.out.print("Enter the power to raise it to: ");
 		int b = s.nextInt();
 		int c = equals(a, b);
-		System.out.print(a + "^" + b + " = " + c);
+		int d = equalsR(a, b);
+		System.out.println(a + "^" + b + " = " + c);
+		System.out.print(a + "^" + b + " = " + d + " (recursive)";
 	}
 }
